@@ -1,0 +1,116 @@
+------------------------------------
+TASK ON 7 OCT 
+
+1)WAP to accept 5 no from the use and find out the smallest
+2)WAP to accept age from user and check is it eligible for voting or not
+3)WAP to accept a no from user if no is positive then display the Addition of that no till 0
+EG: if no is 5 
+ans= 0+1+2+3+4+5
+
+----------------------------------------
+
+Switch case :
+
+Syntax:
+
+switch(expression):
+
+case 1:
+	Block code:
+break;
+....
+....
+...
+...
+default:
+	Block code;
+break;
+
+ATM machine operation by using switch case
+
+import java.util.Scanner;
+
+public class Switch_demo {
+
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		int choice;
+		
+		System.out.println("1:New \"Pin\"\t generate\n2:Withdraw \n3:Blance Check\n4:Pin change");
+		choice=sc.nextInt();
+		
+		switch(choice)
+		{
+		case 1:
+			System.out.println("The process of new pin generate");
+			break;
+		case 2:
+			System.out.println("Welcome to My bank \n The process of money withdraw");
+			break;
+		case 3:
+			System.out.println("The process of balance Check");
+			break;
+		case 4:
+			System.out.println("The process of pin change");
+			break;
+		default:
+			System.out.println("Invvalid input");
+			break;
+		}
+
+	}
+
+}
+
+Nested conditional Statement:
+
+
+WAP to display ROI on the basis of age 
+age above 50 F:9.5 %
+			M:9%
+below 50: 7%
+
+
+import java.util.Scanner;
+
+public class Nested_demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int age;
+		char gender;
+		Scanner sc=new  Scanner(System.in);
+		System.out.println("Enter your age");
+		age=sc.nextInt();
+		System.out.println("Enter your gender");
+		gender=sc.next().charAt(0);
+		
+		if(age>=50)
+		{
+			if(gender=='F'||gender=='f')
+			{
+				System.out.println("9.5% ROI ");
+			}
+			else
+			{
+				System.out.println("9% ROI");
+			}
+		}
+		else
+		{
+			System.out.println("7% ROI");
+		}
+		
+
+	}
+
+}
+
+
+If
+If else
+else if
+switch 
+nested
+
