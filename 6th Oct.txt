@@ -1,0 +1,183 @@
+------------> 1 oct task 
+
+Priti Lalbahadur Yadav 3:28 PM
+Write a program to accept employee basic details from the user and display the out
+
+WAP to accept 2 no from the user and perform arithmetic operation
+
+WAP to accept radious from the user and calculate area of circle and parameter of circle
+
+
+
+-------------------------------------------
+SP= 5
+CP=5
+
+profit=SP-CP  = 10-7 = 0
+
+Conditional statements:
+if
+if else
+else if 
+switch
+nested
+
+if:
+Syntax:
+
+if( condition) 
+{
+	Statement blocks;
+}
+
+//WAP to accept a number from user and if it is even then calculate the square .
+
+import java.util.Scanner;
+
+public class If_demo {
+
+	public static void main(String[] args) 
+	{
+		int num;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number");
+		num=sc.nextInt();
+		
+		if(num%2==0)
+		{
+			System.out.println("The square is ="+ num*num);
+		}
+		
+	}
+
+}
+
+
+-----------------------------
+if else :
+
+Syntax:
+
+if( condition) 
+{
+	Statement blocks;
+}
+else
+{
+	Statement blocks;
+}
+
+WAP to accept SP and CP from the user and find out profit and loss
+
+//WAP to accept SP and CP from the user and find out profit and loss
+
+import java.util.Scanner;
+
+public class If_else_demo {
+
+	public static void main(String[] args) 
+	{
+		int sp,cp,res;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter selling price");
+		sp=sc.nextInt();
+		System.out.println("Enter cost price");
+		cp=sc.nextInt();
+		
+		res=sp-cp;
+		
+		if(res>0)
+		{
+			System.out.println("Profit="+res);
+		}
+		else
+		{
+			System.out.println("Loss="+ -res);
+		}
+
+	}
+
+}
+------------------------
+else if 
+
+
+Syntax:
+
+if( condition) 
+{
+	Statement blocks;
+}
+else if(Condition)
+{
+	Statement blocks;
+}
+---
+---
+---
+---
+else
+{
+	Statement block;
+}
+
+WAP to accept 3 no from user and find out the greater
+
+import java.util.Scanner;
+
+public class else_if_demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int num1,num2,num3;
+		Scanner sc =new Scanner(System.in);
+		System.out.println("Enter 3 no.");
+		num1=sc.nextInt();
+		num2=sc.nextInt();
+		num3=sc.nextInt();
+		
+		if(num1>num2 && num1>num3)
+		{
+			System.out.println("Num1 is graeetr"+ num1);
+		}
+		else if (num2>num1 && num2>num3)
+		{
+			System.out.println("num2 is graeter "+num2);
+		}
+		else
+		{
+			System.out.println("Num3 is graeter"+num3);
+		}
+		
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
